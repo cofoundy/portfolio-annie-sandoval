@@ -1,0 +1,51 @@
+---
+import { siteConfig } from "../config";
+---
+
+<!-- Olive Bar -->
+<div class="w-full h-2 olive-bar-shimmer"></div>
+
+<section
+  id="coaching"
+  class="py-16 md:py-20"
+  style={`background-color: ${siteConfig.colors.creamLight}`}
+>
+  <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+    <div class="reveal">
+      <!-- Icon -->
+      <div
+        class="w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center"
+        style={`background-color: ${siteConfig.colors.coral}20`}
+      >
+        <svg class="w-8 h-8" style={`color: ${siteConfig.colors.coral}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+        </svg>
+      </div>
+
+      <!-- Title -->
+      <h2
+        class="text-2xl md:text-3xl font-semibold mb-4"
+        style={`color: ${siteConfig.accentColor}; font-family: 'Raleway', sans-serif;`}
+      >
+        ¿Quieres conocer más sobre las sesiones de coaching?
+      </h2>
+
+      <!-- Description -->
+      <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
+        Acompaño a líderes a potenciar su desarrollo profesional a través de sesiones de coaching ejecutivo 1:1. Si estás listo para dar el siguiente paso en tu carrera, escríbeme.
+      </p>
+
+      <!-- CTA Button -->
+      <a
+        href={`mailto:${siteConfig.social?.email}?subject=Consulta sobre sesiones de coaching`}
+        class="btn-hover inline-flex items-center gap-2 px-8 py-4 rounded-full text-white font-medium text-lg"
+        style={`background-color: ${siteConfig.colors.coral}`}
+      >
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+        </svg>
+        Escríbeme aquí
+      </a>
+    </div>
+  </div>
+</section>
