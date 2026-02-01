@@ -151,10 +151,6 @@ h1, h2, h3, h4, h5, h6 {
   animation: heroFadeUp 0.6s var(--ease-out) 0.7s both;
 }
 
-.hero-cta:hover {
-  animation: heroPulse 1.5s ease-in-out infinite;
-}
-
 .hero-social {
   animation: heroFadeUp 0.6s var(--ease-out) 0.8s both;
 }
