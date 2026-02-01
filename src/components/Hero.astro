@@ -59,14 +59,14 @@ import { siteConfig } from "../config";
 
         <!-- CTA Button -->
         <a
-          href="#about"
+          href={`mailto:${siteConfig.social?.email}?subject=Consulta sobre sesiones de coaching`}
           class="hero-cta btn-hover inline-flex items-center gap-2 px-6 py-3 rounded-full text-white font-medium mb-6"
           style={`background-color: ${siteConfig.colors.coral}`}
         >
-          Conoce mi historia
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
           </svg>
+          Escríbeme
         </a>
 
         <!-- Social Links -->
