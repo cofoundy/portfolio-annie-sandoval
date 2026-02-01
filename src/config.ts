@@ -16,6 +16,7 @@ export const siteConfig = {
     email: "annie.sandoval.lopez.torres@gmail.com",
     linkedin: "https://linkedin.com/in/annieslt",
     instagram: "https://instagram.com/annie_slt_coach",
+    youtube: "https://youtube.com/@OdiseaLaboral",
   },
   aboutMe:
     "Psicóloga organizacional y Coach Ejecutiva certificada por la Escuela Europea de Coaching. Acompaño a líderes a través de sesiones de coaching 1:1 para potenciar su desarrollo profesional. Con más de 10 años de experiencia liderando iniciativas de desarrollo, liderazgo y cultura organizacional en BBVA. Facilitadora en Design Thinking, innovación y desarrollo de skills. Cofundadora del canal 'Odisea Laboral' sobre liderazgo y tendencias en RRHH.",
