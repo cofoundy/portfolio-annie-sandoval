@@ -8,71 +8,74 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
 
 <header
   id="header"
-  class="fixed top-0 left-0 right-0 z-50 hidden md:block transition-all duration-300"
+  class="fixed top-4 left-1/2 -translate-x-1/2 z-50 hidden md:block opacity-0 pointer-events-none transition-all duration-500"
 >
-  <nav class="max-w-7xl mx-auto px-8 py-4">
-    <ul class="flex items-center gap-8 justify-center">
+  <nav
+    class="px-6 py-3 rounded-full shadow-lg backdrop-blur-md"
+    style={`background-color: ${siteConfig.colors.cream}ee; border: 1px solid ${siteConfig.colors.olive}20`}
+  >
+    <ul class="flex items-center gap-6">
       <li>
         <a
           href="#about"
-          class="text-gray-700 hover:text-black transition-colors font-medium"
+          class="link-underline text-sm font-medium transition-colors duration-300"
+          style={`color: ${siteConfig.accentColor}`}
         >
           Sobre Mi
         </a>
       </li>
-      {
-        hasProjects && (
-          <li>
-            <a
-              href="#projects"
-              class="text-gray-700 hover:text-black transition-colors font-medium"
-            >
-              Proyectos
-            </a>
-          </li>
-        )
-      }
-      {
-        hasExperience && (
-          <li>
-            <a
-              href="#experience"
-              class="text-gray-700 hover:text-black transition-colors font-medium"
-            >
-              Experiencia
-            </a>
-          </li>
-        )
-      }
-      {
-        hasEducation && (
-          <li>
-            <a
-              href="#education"
-              class="text-gray-700 hover:text-black transition-colors font-medium"
-            >
-              Educacion
-            </a>
-          </li>
-        )
-      }
+      {hasProjects && (
+        <li>
+          <a
+            href="#projects"
+            class="link-underline text-sm font-medium transition-colors duration-300"
+            style={`color: ${siteConfig.accentColor}`}
+          >
+            Proyectos
+          </a>
+        </li>
+      )}
+      {hasExperience && (
+        <li>
+          <a
+            href="#experience"
+            class="link-underline text-sm font-medium transition-colors duration-300"
+            style={`color: ${siteConfig.accentColor}`}
+          >
+            Trayectoria
+          </a>
+        </li>
+      )}
+      {hasEducation && (
+        <li>
+          <a
+            href="#education"
+            class="link-underline text-sm font-medium transition-colors duration-300"
+            style={`color: ${siteConfig.accentColor}`}
+          >
+            Educación
+          </a>
+        </li>
+      )}
     </ul>
   </nav>
 </header>
 
 <script>
+  let lastScrollY = 0;
+
   window.addEventListener("scroll", () => {
     const header = document.getElementById("header");
-    if (window.scrollY > 100) {
-      header?.classList.add("bg-white/80", "backdrop-blur-sm");
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > 400) {
+      header?.classList.remove("opacity-0", "pointer-events-none");
+      header?.classList.add("opacity-100", "pointer-events-auto", "header-visible");
     } else {
-      header?.classList.remove("bg-white/80", "backdrop-blur-sm");
+      header?.classList.add("opacity-0", "pointer-events-none");
+      header?.classList.remove("opacity-100", "pointer-events-auto", "header-visible");
     }
+
+    lastScrollY = currentScrollY;
   });
 </script>
-
-<style>
-  html {
-    scroll-behavior: smooth;
-  }
-</style>

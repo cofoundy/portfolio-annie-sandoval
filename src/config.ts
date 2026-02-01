@@ -2,7 +2,16 @@ export const siteConfig = {
   name: "Annie Sandoval",
   title: "Coach de Nuevos Líderes",
   description: "Annie Sandoval - Coach Ejecutiva, Especialista en Talento y Cultura Organizacional",
-  accentColor: "#726F39",
+  // Brand color palette
+  accentColor: "#726F39",      // Olive dark - primary
+  colors: {
+    oliveDark: "#726F39",
+    olive: "#a6a65b",
+    oliveLight: "#c4c48a",
+    coral: "#DB8055",          // Warm accent for CTAs
+    cream: "#F1E5D4",          // Background sections
+    creamLight: "#f8f3eb",
+  },
   social: {
     email: "annie.sandoval.lopez.torres@gmail.com",
     linkedin: "https://linkedin.com/in/annieslt",
