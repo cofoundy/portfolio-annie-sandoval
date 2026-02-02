@@ -1,0 +1,122 @@
+---
+import { getCollection } from "astro:content";
+import { siteConfig } from "../config";
+
+const posts = (await getCollection("blog"))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
+---
+
+<!-- Olive Bar with Shimmer -->
+<div class="w-full h-2 olive-bar-shimmer"></div>
+
+<section
+  id="blog"
+  class="py-12 md:py-16"
+  style={`background-color: ${siteConfig.colors.cream}`}
+>
+  <div class="max-w-6xl mx-auto px-6 lg:px-8">
+    <!-- Header -->
+    <div class="flex items-end justify-between mb-10">
+      <div class="reveal-left">
+        <h2
+          class="text-3xl md:text-4xl font-bold"
+          style={`color: ${siteConfig.accentColor}`}
+        >
+          Últimos Artículos
+        </h2>
+        <div
+          class="w-16 h-1 mt-3 rounded-full"
+          style={`background-color: ${siteConfig.colors.coral}`}
+        ></div>
+      </div>
+      <a
+        href="/blog/"
+        class="reveal-right hidden md:flex items-center gap-2 text-sm font-medium transition-all duration-300 hover:gap-3"
+        style={`color: ${siteConfig.colors.coral}`}
+      >
+        Ver todos
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Blog Cards -->
+    {posts.length > 0 ? (
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {posts.map((post, index) => (
+          <a
+            href={`/blog/${post.id}/`}
+            class={`reveal stagger-${index + 1} group card-hover block p-6 rounded-xl`}
+            style={`background-color: white; border: 1px solid ${siteConfig.colors.oliveDark}20`}
+          >
+            <!-- Date -->
+            <time
+              class="text-xs font-medium uppercase tracking-wider"
+              style={`color: ${siteConfig.colors.coral}`}
+              datetime={post.data.pubDate.toISOString()}
+            >
+              {post.data.pubDate.toLocaleDateString("es-PE", {
+                year: "numeric",
+                month: "short",
+                day: "numeric",
+              })}
+            </time>
+
+            <!-- Title -->
+            <h3
+              class="text-lg font-semibold mt-2 mb-3 group-hover:underline"
+              style={`color: ${siteConfig.accentColor}`}
+            >
+              {post.data.title}
+            </h3>
+
+            <!-- Description -->
+            <p class="text-sm text-gray-600 line-clamp-2">
+              {post.data.description}
+            </p>
+
+            <!-- Read more -->
+            <div
+              class="mt-4 flex items-center gap-1 text-sm font-medium transition-all duration-300 group-hover:gap-2"
+              style={`color: ${siteConfig.colors.coral}`}
+            >
+              Leer más
+              <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+              </svg>
+            </div>
+          </a>
+        ))}
+      </div>
+    ) : (
+      <div class="reveal text-center py-12">
+        <p class="text-gray-500">Próximamente nuevos artículos...</p>
+      </div>
+    )}
+
+    <!-- Mobile: Ver todos link -->
+    <div class="mt-8 text-center md:hidden reveal">
+      <a
+        href="/blog/"
+        class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-white font-medium"
+        style={`background-color: ${siteConfig.colors.coral}`}
+      >
+        Ver todos los artículos
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>
