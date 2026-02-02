@@ -1,12 +1,12 @@
-# DecapBridge PKCE auth - SITE-ID pendiente
+# DecapBridge PKCE auth
 backend:
   name: git-gateway
   repo: cofoundy/portfolio-annie-sandoval
   branch: main
   auth_type: pkce
   base_url: https://auth.decapbridge.com
-  auth_endpoint: /sites/SITE-ID/pkce
-  auth_token_endpoint: /sites/SITE-ID/token
+  auth_endpoint: /sites/8e442f6f-6b56-41e8-b02e-48f5f0822363/pkce
+  auth_token_endpoint: /sites/8e442f6f-6b56-41e8-b02e-48f5f0822363/token
   gateway_url: https://gateway.decapbridge.com
 
 site_url: https://anniesandoval.lat
