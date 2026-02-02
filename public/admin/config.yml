@@ -9,7 +9,7 @@ backend:
   auth_token_endpoint: /sites/8e442f6f-6b56-41e8-b02e-48f5f0822363/token
   gateway_url: https://gateway.decapbridge.com
 
-site_url: https://anniesandoval.lat
+site_url: https://anniesltcoach.com
 
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
