@@ -1,0 +1,29 @@
+# DecapBridge PKCE auth
+backend:
+  name: git-gateway
+  repo: cofoundy/portfolio-annie-sandoval
+  branch: main
+  auth_type: pkce
+  base_url: https://auth.decapbridge.com
+  auth_endpoint: /sites/8e442f6f-6b56-41e8-b02e-48f5f0822363/pkce
+  auth_token_endpoint: /sites/8e442f6f-6b56-41e8-b02e-48f5f0822363/token
+  gateway_url: https://gateway.decapbridge.com
+
+site_url: https://anniesltcoach.com
+
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "src/content/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Descripción", name: "description", widget: "string" }
+      - { label: "Fecha de Publicación", name: "pubDate", widget: "datetime" }
+      - { label: "Fecha de Actualización", name: "updatedDate", widget: "datetime", required: false }
+      - { label: "Imagen Principal", name: "heroImage", widget: "image", required: false }
+      - { label: "Contenido", name: "body", widget: "markdown" }
