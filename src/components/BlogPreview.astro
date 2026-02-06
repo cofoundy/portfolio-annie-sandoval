@@ -31,7 +31,7 @@ const posts = (await getCollection("blog"))
         ></div>
       </div>
       <a
-        href="/blog/"
+        href="https://anniesltcoach.com/blog/"
         class="reveal-right hidden md:flex items-center gap-2 text-sm font-medium transition-all duration-300 hover:gap-3"
         style={`color: ${siteConfig.colors.coral}`}
       >
@@ -47,7 +47,7 @@ const posts = (await getCollection("blog"))
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         {posts.map((post, index) => (
           <a
-            href={`/blog/${post.id}/`}
+            href={`https://anniesltcoach.com/blog/${post.id}/`}
             class={`reveal stagger-${index + 1} group card-hover block p-6 rounded-xl`}
             style={`background-color: white; border: 1px solid ${siteConfig.colors.oliveDark}20`}
           >
@@ -99,7 +99,7 @@ const posts = (await getCollection("blog"))
     <!-- Mobile: Ver todos link -->
     <div class="mt-8 text-center md:hidden reveal">
       <a
-        href="/blog/"
+        href="https://anniesltcoach.com/blog/"
         class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-white font-medium"
         style={`background-color: ${siteConfig.colors.coral}`}
       >
