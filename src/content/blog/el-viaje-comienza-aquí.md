@@ -3,7 +3,7 @@ title: El viaje comienza aquí
 description: Todo viaje tiene un punto de partida, aquí empieza el mío para
   compartir mi viaje y experiencias por el mundo de RRHH.
 pubDate: 2026-02-11T18:30:00.000-05:00
-heroImage: /images/uploads/copia-de-banner-newsletter-annie-5-.png
+heroImage: ""
 ---
 Para las personas que como yo aman viajar, saben que es una experiencia llena de aprendizajes que empieza mucho antes que lleguemos a nuestro destino.
 
