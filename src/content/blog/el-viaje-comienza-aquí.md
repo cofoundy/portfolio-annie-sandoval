@@ -31,8 +31,6 @@ Esta nueva mirada trae sin duda retos que las organizaciones y en especial los e
 
 A estas alturas no queda duda que la mayor fortaleza de una empresa viene de sus colaboradores, por lo que conocerlos y entender sus expectativas y necesidades puede marcar la diferencia.
 
-![]()
-
 *Este apasionante viaje del colaborador es el principal motivo por el que decidí escribir mis experiencias en el mundo del coaching y de HR, porque a veces las experiencias de una persona puede ser el inicio de una idea para otra.*
 
 ¡Nos leemos pronto!
