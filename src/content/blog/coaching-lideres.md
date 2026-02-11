@@ -1,7 +1,8 @@
 ---
-title: '¿Por qué el coaching ejecutivo transforma líderes?'
-description: 'Descubre cómo el coaching ejecutivo puede potenciar tu liderazgo y el de tu equipo'
-pubDate: 'Feb 02 2026'
+title: ¿Por qué el coaching ejecutivo transforma líderes?
+description: Descubre cómo el coaching ejecutivo puede potenciar tu liderazgo y
+  el de tu equipo
+pubDate: 2026-02-11T18:37:00.000-05:00
 ---
 
 El coaching ejecutivo no es solo una tendencia, es una herramienta poderosa para el desarrollo de líderes en el mundo actual.
