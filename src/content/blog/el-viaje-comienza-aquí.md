@@ -23,6 +23,8 @@ Es mucho lo que ocurre entre un punto y otro, y lo resumiría en una sola palabr
 
 Recordemos por ejemplo nuestro primer día de labores en alguna de las organizaciones a las que hemos pertenecido, es probable que lo primero que evoquemos sea un momento que nos genere una emoción, positiva o negativa. Es aquí donde nace una pregunta que las empresas cada vez demuestran mayor interés en abordar: ¿Qué tipo de experiencias estoy generando a los miembros de mi equipo?
 
+![](/images/uploads/sin-fondo-2.png.png)
+
 La experiencia del empleado (EX) es un concepto que surge aproximadamente en el 2015 y que centra su mirada es dos aspectos claves: Lo oportuno que era aplicar la metodología de Customer Experience (CX) con sus respectivas adaptaciones y la necesidad de incorporar la variable emocional a la gestión de personas.
 
 Esta nueva mirada trae sin duda retos que las organizaciones y en especial los equipos de HR deben gestionar, respecto a generar experiencias de valor a sus empleados que se traduzcan a su vez en altos niveles de compromiso y desempeño.
